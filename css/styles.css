@@ -20,19 +20,22 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1, 71;
-  letter-spacing: 0.03em;
 }
 
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   font-size: 26px;
-  line-height: 1, 19;
+  line-height: 1,19;
   text-decoration: none;
 }
 
 .logo-text {
   color: var(--accent-color);
+}
+
+.logo-text-footer {
+  color: var(--primary-white-color);
 }
 
 .link {
@@ -58,6 +61,11 @@ line-height: 1,14;
   color: var(--accent-color);
 }
 
+.site-contact {
+font-weight: 500;
+font-size: 14px;
+line-height: 1,14;}
+
 .site-contact .link:hover,
 .site-contact .link:focus {
   color: var(--accent-color);
@@ -69,7 +77,7 @@ line-height: 1,14;
 .title-name {
   font-weight: 900;
   font-size: 44px;
-  line-height: 1, 36;
+  line-height: 1,36;
   text-align: center;
   color: var(--primary-white-color);
 }
@@ -80,7 +88,7 @@ line-height: 1,14;
   cursor: pointer;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1, 87;
+  line-height: 1,87;
 }
 
 
@@ -118,8 +126,18 @@ line-height: 1,18;
 
 .footer-item {
   color: var(--third-white-color);
+ text-decoration: none;
+ font-family: Roboto;
+ font-style: normal ;
+font-size: 14px;
+line-height: 1.71;
 }
 
 .footer-item-text {
   color: var(--primary-white-color);
+  text-decoration: none;
+ font-family: Roboto;
+ font-style: normal ;
+font-size: 14px;
+line-height: 1.71;
 }
