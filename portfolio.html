@@ -17,79 +17,85 @@
 <body>
     <!-- Шапка -->
     <header>
-        <nav class="navigation">
-            <a href="./index.html" class="logo link"><span class="logo-text">Web</span>Studio</a>
-            <ul class="site-nav">
-                <li class="list"><a href="./index.html" class="link">Студия</a></li>
-                <li class="list"><a href="./portfolio.html" class="link current">Портфолио</a></li>
-                <li class="list"><a href="" class="link">Контакты</a></li>
+        <div class="container">
+            <nav class="navigation">
+                <a href="./index.html" class="logo link"><span class="logo-text">Web</span>Studio</a>
+                <ul class="site-nav">
+                    <li class="list"><a href="./index.html" class="link">Студия</a></li>
+                    <li class="list"><a href="./portfolio.html" class="link current">Портфолио</a></li>
+                    <li class="list"><a href="" class="link">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="site-contact">
+                <li class="list"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+                <li class="list"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
             </ul>
-        </nav>
-        <ul class="site-contact">
-            <li class="list"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-            <li class="list"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
-        </ul>
+        </div>
     </header>
     <!-- Основной контент -->
     <main>
         <section>
-            <ul>
-                <li class="list">
-                    <button type="button" class="button primary">Все</button>
-                </li>
-                <li class="list">
-                    <button type="button" class="button secondary">Веб-сайты</button>
-                </li>
-                <li class="list">
-                    <button type="button" class="button secondary">Приложения</button>
-                </li>
-                <li class="list">
-                    <button type="button" class="button secondary">Дизайн</button>
-                </li>
-                <li class="list">
-                    <button type="button" class="button secondary">Маркетинг</button>
-                </li>
-            </ul>
+            <div class="container">
+                <ul class="gallery-nav">
+                    <li class="list">
+                        <button type="button" class="button primary">Все</button>
+                    </li>
+                    <li class="list">
+                        <button type="button" class="button secondary">Веб-сайты</button>
+                    </li>
+                    <li class="list">
+                        <button type="button" class="button secondary">Приложения</button>
+                    </li>
+                    <li class="list">
+                        <button type="button" class="button secondary">Дизайн</button>
+                    </li>
+                    <li class="list">
+                        <button type="button" class="button secondary">Маркетинг</button>
+                    </li>
+                </ul>
 
-            <ul>
-                <li class="list"><img src="./images/imgportfolio1.jpg" alt="Фотография Игоря Демьяненко" width="370">
-                    <h3 class="content">Технокряк</h3>
-                    <p class="content-item">Веб-сайт</p>
-                </li>
-                <li class="list"><img src="./images/imgportfolio2.jpg" alt="Фотография Игоря Демьяненко" width="370">
-                    <h3 class="content">Постер New Orlean vs Golden Star</h3>
-                    <p class="content-item">Дизайн</p>
-                </li>
-                <li class="list"><img src="./images/imgportfolio3.jpg" alt="Фотография Игоря Демьяненко" width="370">
-                    <h3 class="content">Ресторан Seafood</h3>
-                    <p class="content-item">Приложение</p>
-                </li>
-                <li class="list"><img src="./images/imgportfolio4.jpg" alt="Фотография Игоря Демьяненко" width="370">
-                    <h3 class="content">Проект Prime</h3>
-                    <p class="content-item">Маркетинг</p>
-                </li>
-                <li class="list"><img src="./images/imgportfolio5.jpg" alt="Фотография Игоря Демьяненко" width="370">
-                    <h3 class="content">Проект Boxes</h3>
-                    <p class="content-item">Приложение</p>
-                </li>
-                <li class="list"><img src="./images/imgportfolio6.jpg" alt="Фотография Игоря Демьяненко" width="370">
-                    <h3 class="content">Inspiration has no Borders</h3>
-                    <p class="content-item">Веб-сайт</p>
-                </li>
-                <li class="list"><img src="./images/imgportfolio7.jpg" alt="Фотография Игоря Демьяненко" width="370">
-                    <h3 class="content">Издание Limited Edition</h3>
-                    <p class="content-item">Дизайн</p>
-                </li>
-                <li class="list"><img src="./images/imgportfolio8.jpg" alt="Фотография Игоря Демьяненко" width="370">
-                    <h3 class="content">Проект LAB</h3>
-                    <p class="content-item">Маркетинг</p>
-                </li>
-                <li class="list"><img src="./images/imgportfolio9.jpg" alt="Фотография Игоря Демьяненко" width="370">
-                    <h3 class="content">Growing Business</h3>
-                    <p class="content-item">Приложение</p>
-                </li>
-            </ul>
-
+                <ul>
+                    <li class="list"><img src="./images/imgportfolio1.jpg" alt="Проект Технокряк" width="370">
+                        <h3 class="gallery">Технокряк</h3>
+                        <p class="gallery-item">Веб-сайт</p>
+                    </li>
+                    <li class="list"><img src="./images/imgportfolio2.jpg" alt="Проект Постер New Orlean vs Golden Star"
+                            width="370">
+                        <h3 class="gallery">Постер New Orlean vs Golden Star</h3>
+                        <p class="gallery-item">Дизайн</p>
+                    </li>
+                    <li class="list"><img src="./images/imgportfolio3.jpg" alt="Проект Ресторан Seafood" width="370">
+                        <h3 class="gallery">Ресторан Seafood</h3>
+                        <p class="gallery-item">Приложение</p>
+                    </li>
+                    <li class="list"><img src="./images/imgportfolio4.jpg" alt="Проект Prime" width="370">
+                        <h3 class="gallery">Проект Prime</h3>
+                        <p class="gallery-item">Маркетинг</p>
+                    </li>
+                    <li class="list"><img src="./images/imgportfolio5.jpg" alt="Проект Boxes" width="370">
+                        <h3 class="gallery">Проект Boxes</h3>
+                        <p class="gallery-item">Приложение</p>
+                    </li>
+                    <li class="list"><img src="./images/imgportfolio6.jpg" alt="Проект Inspiration has no Borders"
+                            width="370">
+                        <h3 class="gallery">Inspiration has no Borders</h3>
+                        <p class="gallery-item">Веб-сайт</p>
+                    </li>
+                    <li class="list"><img src="./images/imgportfolio7.jpg" alt="Проект Издание Limited Edition"
+                            width="370">
+                        <h3 class="gallery">Издание Limited Edition</h3>
+                        <p class="gallery-item">Дизайн</p>
+                    </li>
+                    <li class="list"><img src="./images/imgportfolio8.jpg" alt="Проект LAB" width="370">
+                        <h3 class="gallery">Проект LAB</h3>
+                        <p class="gallery-item">Маркетинг</p>
+                    </li>
+                    <li class="list"><img src="./images/imgportfolio9.jpg" alt="Проект Growing Business" width="370">
+                        <h3 class="gallery">Growing Business</h3>
+                        <p class="gallery-item">Приложение</p>
+                    </li>
+                </ul>
+            </div>
 
         </section>
 

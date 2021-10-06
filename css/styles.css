@@ -10,23 +10,42 @@
     255,
     0.6
   ); /* цвет текста с прозрачностью */
+  --primary-hover-button: #188ce8; /* ховер кнопки */
+  --primary-nonactive-button: #f5f4fa; /* неактивная кнопка */
 }
 
-.body {
+body {
   background-color: var(--primary-white-color);
   color: var(--secondary-text-color);
 
-  font-family: Roboto; sans-serif;
+  font-family: Roboto, sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1, 71;
+  line-height: 1.71;
+}
+
+address {
+  font-style: normal;
+}
+
+.container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+
+  padding: 0 15px;
+
+  outline: 2px dashed #f44336;
+}
+section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
   font-size: 26px;
-  line-height: 1,19;
+  line-height: 1.19;
   text-decoration: none;
 }
 
@@ -40,104 +59,149 @@
 
 .link {
   color: var(--primary-text-color);
+  text-decoration: none;
 }
 
 .list {
   list-style: none;
 }
 
-.navigation {
-font-weight: 500;
-font-size: 14px;
-line-height: 1,14;
+.navigation,
+.site-contact {
+  font-weight: 500;
+  line-height: 1.14;
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: var(--accent-color);  
+  color: var(--accent-color);
 }
 
 .site-nav .link.current {
   color: var(--accent-color);
 }
 
-.site-contact {
-font-weight: 500;
-font-size: 14px;
-line-height: 1,14;}
+.site-contact .link {
+  color: var(--secondary-text-color);
+}
 
-.site-contact .link:hover,
-.site-contact .link:focus {
+.site-contact,
+.link:hover,
+.site-contact,
+.link:focus {
   color: var(--accent-color);
 }
 
 .title-section {
   background-color: var(--primary-dark-color);
+  text-align: center;
 }
+
 .title-name {
+  color: var(--primary-white-color);
+
+  text-transform: uppercase;
+  font-family: inherit;
   font-weight: 900;
   font-size: 44px;
-  line-height: 1,36;
-  text-align: center;
-  color: var(--primary-white-color);
+  line-height: 1.36;
 }
 
 .button {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  border-radius: 4px;
   cursor: pointer;
+  border: 0;
+
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1,87;
+  line-height: 1.87;
 }
-
 
 .button.primary {
   color: var(--primary-white-color);
-  background-color: var(--accent-color);
 }
 
 .button.secondary {
-  color: var(--accent-color);
-  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+  background-color: var(--primary-nonactive-button);
 }
 
-
-.content {
-    color: var(--primary-text-color);
-  font-weight: bold;
-}
-.content-item {
-    font-size: 16px;
-line-height: 1,18;
+.button:hover,
+.button:focus {
+  color: var(--primary-white-color);
+  background-color: var(--primary-hover-button);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .occupation-item {
-    color: var(--primary-text-color);
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 1, 16;
-    text-align: center;
+  color: var(--primary-text-color);
+  font-family: inherit;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.content {
+  color: var(--primary-text-color);
+  font-family: inherit;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.team {
+  color: var(--primary-text-color);
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.18;
+}
+
+.team-item {
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+.gallery {
+  color: var(--primary-text-color);
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.gallery-item {
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+.gallery-nav {
+  display: flex;
+
+  outline:solid tomato;
 }
 
 .footer-content {
   background-color: var(--primary-dark-color);
 }
 
-.footer-item {
+.footer-item,
+.footer-item-text {
   color: var(--third-white-color);
- text-decoration: none;
- font-family: Roboto;
- font-style: normal ;
-font-size: 14px;
-line-height: 1.71;
+  text-decoration: none;
 }
-
 .footer-item-text {
   color: var(--primary-white-color);
-  text-decoration: none;
- font-family: Roboto;
- font-style: normal ;
-font-size: 14px;
-line-height: 1.71;
+}
+
+.footer-item:hover,
+.footer-item:focus,
+.footer-item-text:hover,
+.footer-item-text:focus {
+  color: var(--accent-color);
 }
