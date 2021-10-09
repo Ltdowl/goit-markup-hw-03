@@ -10,8 +10,11 @@
     255,
     0.6
   ); /* цвет текста с прозрачностью */
+   --accent-color-button: #2196f3; /* цвет кнопки */
   --primary-hover-button: #188ce8; /* ховер кнопки */
   --primary-nonactive-button: #f5f4fa; /* неактивная кнопка */
+  --shadow-button: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12); /* тень кнопки */
 }
 
 body {
@@ -22,6 +25,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 address {
@@ -30,22 +34,16 @@ address {
 
 .container {
   width: 1200px;
-  margin-right: auto;
+  outline: dotted red;
   margin-left: auto;
-
-  padding: 0 15px;
-
-  outline: 2px dashed #f44336;
-}
-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  margin-right: auto;
 }
 
 .logo {
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
   text-decoration: none;
 }
 
@@ -70,6 +68,7 @@ section {
 .site-contact {
   font-weight: 500;
   line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .site-nav .link:hover,
@@ -105,11 +104,24 @@ section {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
+letter-spacing: 0.06em;
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+
 .button {
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
   border-radius: 4px;
   cursor: pointer;
   border: 0;
@@ -118,10 +130,12 @@ section {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
+  
 }
 
 .button.primary {
   color: var(--primary-white-color);
+  background-color: var(--accent-color-button);
 }
 
 .button.secondary {
@@ -133,8 +147,7 @@ section {
 .button:focus {
   color: var(--primary-white-color);
   background-color: var(--primary-hover-button);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: var(--shadow-button);
 }
 
 .occupation-item {
@@ -143,6 +156,7 @@ section {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .content {
@@ -151,39 +165,51 @@ section {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
+  letter-spacing: 0.03em;
 }
 
 .team {
+
+}
+
+.team-item {
   color: var(--primary-text-color);
   font-family: inherit;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.18;
+  letter-spacing: 0.03em;
 }
 
-.team-item {
+.team-text {
   font-size: 16px;
   line-height: 1.18;
+  letter-spacing: 0.03em;
 }
 
+.portfolio-nav {
+  
+}
+
+
 .gallery {
-  color: var(--primary-text-color);
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
+
 }
 
 .gallery-item {
-  font-size: 16px;
-  line-height: 1.87;
+color: var(--primary-text-color);
+font-family: inherit;
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
 }
 
-.gallery-nav {
-  display: flex;
-
-  outline:solid tomato;
+.gallery-text {
+font-size: 16px;
+line-height: 1.87;
+letter-spacing: 0.03em;
 }
 
 .footer-content {
