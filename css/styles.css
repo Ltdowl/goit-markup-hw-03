@@ -41,7 +41,6 @@ address {
 }
 
 .logo {
-
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
   line-height: 1.19;
@@ -49,8 +48,7 @@ address {
   text-decoration: none;
  
   margin-right: 93px;
- 
-}
+ }
 
 .logo-text {
   color: var(--accent-color);
@@ -74,12 +72,9 @@ display: flex;
 align-items: center;
 }
 
-
-
 .site-contact {
   margin-left: auto;
 }
-
 
 .site-nav,
 .site-contact {
@@ -89,14 +84,10 @@ align-items: center;
   letter-spacing: 0.02em;
 }
 
-
-
-
 .site-contact .list,
 .site-nav .list {
 margin-right: 50px;
 }
-
 
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -132,9 +123,11 @@ margin-right: 50px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-letter-spacing: 0.06em;
-
-margin-top: 0;
+  letter-spacing: 0.06em;
+  margin-top: 0;
+  padding-top: 200px;
+  padding-left: 252px;
+  padding-right: 252px;
 }
 
 .visually-hidden {
@@ -168,6 +161,7 @@ margin-top: 0;
     margin-top: 40px;
     margin-bottom: 210px;
 }
+
 .button.primary {
   color: var(--primary-white-color);
   background-color: var(--accent-color-button);
