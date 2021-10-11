@@ -47,9 +47,9 @@ address {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
-  margin-left: 215px;
+ 
   margin-right: 93px;
-  background-color: yellow;
+ 
 }
 
 .logo-text {
@@ -83,7 +83,6 @@ align-items: center;
 
 .site-nav,
 .site-contact {
-  
   display: flex;
   font-weight: 500;
   line-height: 1.14;
@@ -95,9 +94,7 @@ align-items: center;
 
 .site-contact .list,
 .site-nav .list {
-  outline: 1px solid red;
 margin-right: 50px;
-
 }
 
 
