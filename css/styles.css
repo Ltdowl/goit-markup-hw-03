@@ -35,16 +35,21 @@ address {
 .container {
   width: 1200px;
   outline: dotted red;
+
   margin-left: auto;
   margin-right: auto;
 }
 
 .logo {
+
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+  margin-left: 215px;
+  margin-right: 93px;
+  background-color: yellow;
 }
 
 .logo-text {
@@ -64,12 +69,37 @@ address {
   list-style: none;
 }
 
-.navigation,
+.navigation, .nav{
+display: flex;
+align-items: center;
+}
+
+
+
 .site-contact {
+  margin-left: auto;
+}
+
+
+.site-nav,
+.site-contact {
+  
+  display: flex;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
+
+
+
+.site-contact .list,
+.site-nav .list {
+  outline: 1px solid red;
+margin-right: 50px;
+
+}
+
 
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -82,6 +112,7 @@ address {
 
 .site-contact .link {
   color: var(--secondary-text-color);
+  
 }
 
 .site-contact,
@@ -92,7 +123,7 @@ address {
 }
 
 .title-section {
-  background-color: var(--primary-dark-color);
+   background-color: var(--primary-dark-color);
   text-align: center;
 }
 
@@ -105,6 +136,8 @@ address {
   font-size: 44px;
   line-height: 1.36;
 letter-spacing: 0.06em;
+
+margin-top: 0;
 }
 
 .visually-hidden {
