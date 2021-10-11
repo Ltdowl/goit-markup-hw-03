@@ -224,7 +224,16 @@ margin-right: 50px;
   padding-right: 40px;
 }
 
+.occupation {
+  display: flex;
+  margin-top: 50px;
+  
+ 
+}
 
+.occupation .list {
+ 
+}
 .team {
 
 }
