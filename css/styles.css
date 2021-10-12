@@ -41,11 +41,10 @@ p {
 
 .container {
   width: 1200px;
-  outline: dotted red;
+  
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
 }
 
 .logo {
@@ -196,9 +195,8 @@ margin-right: 50px;
   text-align: center;
   letter-spacing: 0.03em;
 
-
   margin-top: 94px;
-  background-color: purple;
+  
 }
 
 .content {
@@ -214,30 +212,46 @@ margin-right: 50px;
 
 .container .content-list {
   display: flex;
-
-  margin-top: 45px;
- 
+  margin-top: 94px;
   padding-left: 0;
-  
-}
+  }
 .content-list .list {
-  padding-right: 40px;
+  margin-right: 30px;
+}
+
+.content-text {
+  padding-top: 10px;
 }
 
 .occupation {
   display: flex;
-  margin-top: 50px;
   
- 
+}
+
+
+.container .occupation {
+  margin-top: 50px;
 }
 
 .occupation .list {
- 
+display: flex;
+
 }
+
+
 .team {
-
+display: flex;
+text-align: center;
+margin-top: 50px;
 }
 
+.team .list {
+  
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+}
 .team-item {
   color: var(--primary-text-color);
   font-family: inherit;
@@ -245,12 +259,15 @@ margin-right: 50px;
   font-weight: 500;
   line-height: 1.18;
   letter-spacing: 0.03em;
+
+  margin-top: 30px;
 }
 
 .team-text {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
+  margin-top: 10px;
 }
 
 .portfolio-nav {
