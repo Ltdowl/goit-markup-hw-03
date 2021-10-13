@@ -259,8 +259,6 @@ padding-left: 0;
   margin-right: 0;
 }
 
-
-
 .team {
 display: flex;
 justify-content: space-around;
@@ -297,7 +295,6 @@ padding-left: 0;
   letter-spacing: 0.03em;
   margin-top: 10px;
 }
-
 
 .portfolio-nav {
   display: flex;
