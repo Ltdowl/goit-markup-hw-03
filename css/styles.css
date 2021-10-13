@@ -20,7 +20,6 @@
 body {
   background-color: var(--primary-white-color);
   color: var(--secondary-text-color);
-
   font-family: Roboto, sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -42,20 +41,23 @@ ul {
 
 .container {
   width: 1200px;
-  
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.logo {
+header .container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {  
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
- 
   margin-right: 93px;
  }
 
@@ -76,15 +78,6 @@ ul {
   list-style: none;
 }
 
-.navigation, .nav{
-display: flex;
-align-items: center;
-}
-
-.site-contact {
-  margin-left: auto;
-}
-
 .site-nav,
 .site-contact {
   display: flex;
@@ -94,18 +87,19 @@ align-items: center;
   padding-left: 0;
   
 }
-
+.site-contact {
+  margin-left: auto;
+}
 .site-contact .list,
 .site-nav .list {
-margin-right: 50px;
-padding-top: 32px;
+  margin-right: 50px;
+  padding-top: 32px;
   padding-bottom: 32px;
-  
 }
 
 .site-contact .list:last-child,
 .site-nav .list:last-child {
-margin-right: 0;
+  margin-right: 0;
 }
 
 .site-nav .link:hover,
@@ -119,7 +113,6 @@ margin-right: 0;
 
 .site-contact .link {
   color: var(--secondary-text-color);
-  
 }
 
 .site-contact,
@@ -136,7 +129,6 @@ margin-right: 0;
 
 .title-name {
   color: var(--primary-white-color);
-
   text-transform: uppercase;
   font-family: inherit;
   font-weight: 900;
@@ -162,7 +154,6 @@ margin-right: 0;
   margin: -1px;
 }
 
-
 .button {
   border-radius: 4px;
   cursor: pointer;
@@ -177,7 +168,6 @@ margin-right: 0;
 .btn .button {
   width: 200px;
   height: 50px;
- 
   margin-top: 40px;
   margin-bottom: 200px;
 }
@@ -206,10 +196,8 @@ margin-right: 0;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-
   margin-top: 94px;
-  
-}
+  }
 
 .content {
   color: var(--primary-text-color);
@@ -218,17 +206,20 @@ margin-right: 0;
   line-height: 1.14;
   text-transform: uppercase;
   letter-spacing: 0.03em;
-  
-  
 }
 
 .container .content-list {
   display: flex;
+  justify-content: space-around;
   margin-top: 94px;
   padding-left: 0;
-  }
+}
+
 .content-list .list {
   margin-right: 30px;
+}
+.content-list .list:last-child {
+  margin-right: 0;
 }
 
 .content-text {
@@ -237,9 +228,8 @@ margin-right: 0;
 
 .occupation {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
-
 
 .container .occupation {
   margin-top: 50px;
@@ -247,32 +237,33 @@ margin-right: 0;
 
 .occupation .list {
 display: flex;
+justify-content: space-around;
 margin-right: 30px;
-
+padding-left: 0;
 }
 
 .occupation .list:last-child {
   margin-right: 0;
 }
+
 .team {
 display: flex;
 justify-content: space-around;
 text-align: center;
 margin-top: 50px;
-margin-bottom: 0;
-}
-.team .list:last-child {
-  margin-right: 0;
+padding-left: 0;
 }
 
 .team .list {
   margin-right: 30px;
-
+  padding-bottom: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-
 }
 
+.team .list:last-child {
+  margin-right: 0;
+}
 
 .team-item {
   color: var(--primary-text-color);
@@ -281,7 +272,6 @@ margin-bottom: 0;
   font-weight: 500;
   line-height: 1.18;
   letter-spacing: 0.03em;
-
   margin-top: 30px;
 }
 
@@ -302,19 +292,19 @@ margin-bottom: 0;
 }
 
 .gallery-item {
-color: var(--primary-text-color);
-font-family: inherit;
-font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 2;
-letter-spacing: 0.06em;
+  color: var(--primary-text-color);
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
 
 .gallery-text {
-font-size: 16px;
-line-height: 1.87;
-letter-spacing: 0.03em;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
 }
 
 .footer-content {
@@ -326,10 +316,9 @@ letter-spacing: 0.03em;
 
 .footer-list {
   margin-top: 20px;
-  margin-bottom: 0;
   padding: 0;
-
 }
+
 .footer-list .list {
   margin-top: 9px;
 }
