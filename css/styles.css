@@ -35,7 +35,8 @@ address {
 h1,
 h2,
 h3,
-p {
+p,
+ul {
   margin: 0;
 }
 
@@ -44,7 +45,8 @@ p {
   
   padding-left: 15px;
   padding-right: 15px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .logo {
@@ -89,11 +91,21 @@ align-items: center;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-left: 0;
+  
 }
 
 .site-contact .list,
 .site-nav .list {
 margin-right: 50px;
+padding-top: 32px;
+  padding-bottom: 32px;
+  
+}
+
+.site-contact .list:last-child,
+.site-nav .list:last-child {
+margin-right: 0;
 }
 
 .site-nav .link:hover,
@@ -225,7 +237,7 @@ margin-right: 50px;
 
 .occupation {
   display: flex;
-  
+  justify-content: space-around;
 }
 
 
@@ -235,23 +247,33 @@ margin-right: 50px;
 
 .occupation .list {
 display: flex;
+margin-right: 30px;
 
 }
 
-
+.occupation .list:last-child {
+  margin-right: 0;
+}
 .team {
 display: flex;
+justify-content: space-around;
 text-align: center;
 margin-top: 50px;
+margin-bottom: 0;
+}
+.team .list:last-child {
+  margin-right: 0;
 }
 
 .team .list {
-  
+  margin-right: 30px;
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
 }
+
+
 .team-item {
   color: var(--primary-text-color);
   font-family: inherit;
@@ -297,6 +319,7 @@ letter-spacing: 0.03em;
 
 .footer-content {
   background-color: var(--primary-dark-color);
+  margin-top: 94px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
