@@ -56,6 +56,13 @@ header .container {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.section:nth-child(2){
+  padding-bottom: 0;
+}
+
+.section:last-child {
+  background-color:#F5F4FA;
+}
 
 .logo {  
   font-family: 'Raleway', sans-serif;
@@ -140,7 +147,7 @@ header .container {
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  margin-top: 0;
+ 
   padding-left: 252px;
   padding-right: 252px;
 }
@@ -250,9 +257,7 @@ padding-left: 0;
   margin-right: 0;
 }
 
-.team-section {
-  background-color:#F5F4FA;
-}
+
 
 .team {
 display: flex;
