@@ -297,16 +297,15 @@ padding-left: 0;
   letter-spacing: 0.03em;
   margin-top: 10px;
 }
-.portfolio {
-  outline: solid red;
-}
 
 
 .portfolio-nav {
   display: flex;
   justify-content: center;
   text-align: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
+  padding-left: 0;
+  
 }
 .portfolio-nav .list {
   margin-right: 30px;
@@ -316,12 +315,29 @@ padding-left: 0;
 }
 .gallery {
 display: flex;
+justify-content: center;
+text-align:left;
+flex-wrap: wrap;
+
+margin-right: -30px;
+margin-bottom: -30px;
+
+padding: 0;
 }
 
 .gallery .list {
+  
+  flex-basis: calc((100% - 90px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
   padding-bottom: 20px;
   border-bottom: 1px solid #EEEEEE;
 }
+
+.gallery .list:nth-child(3n+3) {
+    margin-right: 0;
+}
+
 .gallery-item {
   color: var(--primary-text-color);
   font-family: inherit;
