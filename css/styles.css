@@ -53,8 +53,6 @@ header .container {
   border-bottom: 1px solid #ECECEC;
 }
 .section {
-  background-color: yellow;
-  outline: solid red;
   padding-top: 94px;
   padding-bottom: 94px;
 }
