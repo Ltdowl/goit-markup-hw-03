@@ -334,6 +334,9 @@ header .container {
 .footer-list .list {
   margin-bottom: 9px;
 }
+.footer-list .list:last-child {
+  margin-bottom: 0;
+}
 .footer-item,
 .footer-item-text {
   color: var(--third-white-color);
